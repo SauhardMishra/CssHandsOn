@@ -5,48 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link
+    <link
       href="https://fonts.googleapis.com/css?family=Lobster"
       rel="stylesheet"
       type="text/css"
-    /> 
+    />
 
     <style>
+      .thick-green-border {
+        border: 10px solid green;
+        border-radius: 10px;
+      }
+      .red-text {
+        color: red;
+      }
 
-        .thick-green-border{
-          border: 10px solid green;
-          border-radius:10px;
-        }
-        .red-text {
-          color: red;
-        }
-      
-        h2 {
-          font-family: Lobster, monospace;
-        }
-      
-        p {
-          font-size: 16px;
-          font-family: monospace;
-        }
-      
-        .smaller-image {
-          width: 100px;
-          border-radius:50%;
-        }
-        .silver-background{
-         background-color:silver;
-        }
-      </style>
+      h2 {
+        font-family: Lobster, monospace;
+      }
 
-    
+      p {
+        font-size: 16px;
+        font-family: monospace;
+      }
+
+      .smaller-image {
+        width: 100px;
+        border-radius: 50%;
+      }
+      .silver-background {
+        background-color: silver;
+      }
+
+      #cat-photo-form {
+        background-color: green;
+      }
+    </style>
   </head>
   <body>
     <h2 class="red-text">CatPhotoApp</h2>
     <main>
-      <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
-    
-      <a href="#"><img class="thick-green-border smaller-image" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      <p class="red-text">
+        Click here to view more <a href="#">cat photos</a>.
+      </p>
+
+      <a href="#"
+        ><img
+          class="thick-green-border smaller-image"
+          src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+          alt="A cute orange cat lying on its back."
+      /></a>
 
       <div class="silver-background">
         <p>Things cats love:</p>
@@ -63,13 +71,22 @@
         </ol>
       </div>
 
-      <form  id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
-        <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
-        <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
-        <label><input type="checkbox" name="personality" checked> Loving</label>
-        <label><input type="checkbox" name="personality"> Lazy</label>
-        <label><input type="checkbox" name="personality"> Energetic</label><br>
-        <input type="text" placeholder="cat photo URL" required>
+      <form
+        id="cat-photo-form"
+        action="https://freecatphotoapp.com/submit-cat-photo"
+      >
+        <label
+          ><input type="radio" name="indoor-outdoor" checked /> Indoor</label
+        >
+        <label><input type="radio" name="indoor-outdoor" /> Outdoor</label
+        ><br />
+        <label
+          ><input type="checkbox" name="personality" checked /> Loving</label
+        >
+        <label><input type="checkbox" name="personality" /> Lazy</label>
+        <label><input type="checkbox" name="personality" /> Energetic</label
+        ><br />
+        <input type="text" placeholder="cat photo URL" required />
         <button type="submit">Submit</button>
       </form>
     </main>
